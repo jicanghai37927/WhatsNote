@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:minHeight="@dimen/recordPreferredItemHeight">
+
+    <FrameLayout
+            android:id="@+id/btn_delete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_red_light"
+            android:foreground="?selectableItemBackground">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="left"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:text="删除"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+            android:id="@+id/content_layout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWindowBackground"
+            android:foreground="?selectableItemBackground"
+            android:minHeight="@dimen/recordPreferredItemHeight"
+            android:gravity="center_vertical"
+            android:paddingLeft="?listPreferredItemPaddingLeft"
+            android:paddingRight="?listPreferredItemPaddingRight">
+
+        <app.haiyunshan.whatsnote.widget.RecordIconView
+                android:id="@+id/iv_icon"
+                android:layout_width="@dimen/recordIconSize"
+                android:layout_height="@dimen/recordIconSize"
+                app:radius="@dimen/recordIconRadius"
+                app:mask="@drawable/shape_icon_mask"
+                android:layout_marginRight="?listPreferredItemPaddingRight"/>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/tv_name"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+            <TextView
+                    android:id="@+id/tv_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+        </LinearLayout>
+
+        <app.haiyunshan.whatsnote.tag.widget.TagView
+                android:id="@+id/tag_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="?listPreferredItemPaddingLeft">
+
+        </app.haiyunshan.whatsnote.tag.widget.TagView>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_chevron"
+                android:src="@drawable/ic_chevron_right_white_24dp"
+                android:tint="@color/colorChevron"
+                android:visibility="invisible"/>
+    </LinearLayout>
+</FrameLayout>
+

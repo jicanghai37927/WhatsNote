@@ -1,2 +1,2 @@
-# WhatsNote
-WhatsNote
+# whatsnote
+an incredible note app

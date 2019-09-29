@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/shape_note_icon">
+
+    </item>
+
+    <item>
+
+        <bitmap android:src="@drawable/ic_add_white_24dp"
+                android:tint="@color/colorPrimary"
+                android:gravity="center"/>
+    </item>
+
+</layer-list>

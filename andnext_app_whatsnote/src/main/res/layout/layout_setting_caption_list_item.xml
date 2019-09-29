@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tv_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="?listPreferredItemPaddingLeft"
+        android:paddingBottom="?listPreferredItemPaddingRight"
+        android:gravity="center"
+        android:paddingLeft="?listPreferredItemPaddingLeft"
+        android:paddingRight="?listPreferredItemPaddingRight">
+
+</TextView>

@@ -1,0 +1,3 @@
+/Users/elevennnn/Documents/workspace_old/WhatsNote/andnext_app_whatsnote/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/elevennnn/Documents/workspace_old/WhatsNote/andnext_app_whatsnote/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+/Users/elevennnn/Documents/workspace_old/WhatsNote/andnext_app_whatsnote/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/native-lib.dir

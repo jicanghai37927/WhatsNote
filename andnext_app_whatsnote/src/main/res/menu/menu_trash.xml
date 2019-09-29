@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu_recover"
+          android:title="恢复"
+          app:showAsAction="always"/>
+
+    <item android:id="@+id/menu_delete_now"
+          android:title="立即删除"
+          app:showAsAction="always"/>
+
+</menu>

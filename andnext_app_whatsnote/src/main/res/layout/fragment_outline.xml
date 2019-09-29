@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:fitsSystemWindows="true"
+              android:background="@drawable/shape_outline_bg"
+              android:outlineProvider="background"
+              tools:context=".outline.OutlineFragment">
+
+    <app.haiyunshan.whatsnote.widget.TitleBar
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/shape_top_bar_bg">
+
+    </app.haiyunshan.whatsnote.widget.TitleBar>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:overScrollMode="never"
+            android:clipToPadding="false">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/shape_bottom_bar_bg">
+
+        <TextView
+                android:id="@+id/btn_indent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/selector_action_menu"
+                android:gravity="center"
+                android:drawablePadding="?listPreferredItemPaddingLeft"
+                android:drawableTint="@color/colorPrimary"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:text="全部缩进"/>
+
+    </FrameLayout>
+</LinearLayout>

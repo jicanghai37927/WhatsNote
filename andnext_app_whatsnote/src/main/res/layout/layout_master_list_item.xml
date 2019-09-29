@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/shareProfileMargin"
+        android:layout_marginLeft="?listPreferredItemPaddingLeft"
+        android:layout_marginRight="?listPreferredItemPaddingRight"
+        android:layout_marginBottom="?listPreferredItemPaddingRight">
+
+    <!-- 头像 -->
+
+    <FrameLayout
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:padding="2dp"
+            android:background="@drawable/shape_master_bg">
+
+        <ImageView
+                android:id="@+id/iv_portrait"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foreground="?selectableItemBackgroundBorderless"
+                android:background="@drawable/shape_portrait_bg"
+                android:outlineProvider="background"/>
+    </FrameLayout>
+
+    <!-- 昵称 -->
+
+    <TextView
+            android:id="@+id/tv_name"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <!-- 时间戳 -->
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="4dp">
+
+        <TextView
+                android:layout_width="108dp"
+                android:layout_height="1px"
+                android:background="@drawable/shape_timestamp_separator"/>
+
+        <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:layout_marginLeft="?listPreferredItemPaddingLeft"
+                android:layout_marginRight="?listPreferredItemPaddingRight"
+                android:textSize="12sp"/>
+
+        <TextView
+                android:layout_width="108dp"
+                android:layout_height="1px"
+                android:background="@drawable/shape_timestamp_separator"/>
+    </LinearLayout>
+
+    <!-- 个性签名 -->
+
+    <TextView
+            android:id="@+id/tv_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center_horizontal"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+</LinearLayout>

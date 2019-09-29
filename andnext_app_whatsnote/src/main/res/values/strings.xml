@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">神马笔记</string>
+
+    <string name="share_directory">WhatsNote</string>
+
+    <string name="btn_done">完成</string>
+
+    <string name="lyric_title">▇▇▇▇▇▇▇▇▇▇▇　</string>
+    <string name="lyric_artists">▇▇▇▇　</string>
+    <string name="lyric_title_even">▇▇▇▇▇▇▇▇▇▇▇▇▇　</string>
+    <string name="lyric_artists_even">▇▇▇▇▇▇　</string>
+
+    <!-- TODO: Remove or change this placeholder hint -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorSettingItemBackground"
+        android:paddingLeft="?listPreferredItemPaddingLeft"
+        android:paddingRight="?listPreferredItemPaddingRight"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp">
+        <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@mipmap/ic_launcher_background"
+                android:scaleType="center"/>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical">
+
+        <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"/>
+
+        <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                android:textSize="13sp"
+                android:id="@+id/tv_developer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"/>
+
+        <ProgressBar
+                android:id="@+id/progress_horizontal"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:progressDrawable="@drawable/shape_update_progress_bar_horizontal"
+                android:visibility="visible"
+                android:indeterminate="false"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                />
+
+        <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                android:textSize="13sp"
+                android:id="@+id/tv_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"/>
+    </LinearLayout>
+
+</LinearLayout>

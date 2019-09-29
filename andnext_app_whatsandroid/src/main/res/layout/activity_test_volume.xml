@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".TestVolumeActivity">
+
+    <app.haiyunshan.widget.WaveView
+            android:id="@+id/wave_view"
+            android:layout_width="match_parent"
+                                    android:layout_height="42dp"
+    android:background="#ff0000">
+
+    </app.haiyunshan.widget.WaveView>
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="MediaRecorder"
+            android:onClick="onMediaClick"/>
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="AudioRecord"
+            android:onClick="onAudioClick"/>
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:text="停止"
+    android:onClick="onStopClick"/>
+</LinearLayout>

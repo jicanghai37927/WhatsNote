@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".article.ShareArticleFragment">
+
+    <app.haiyunshan.whatsnote.widget.SearchTitleBar
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            app:searchVisible="false"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_top_bar_bg">
+
+    </app.haiyunshan.whatsnote.widget.SearchTitleBar>
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        <FrameLayout
+                android:id="@+id/content_card"
+                android:clipChildren="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="?listPreferredItemPaddingLeft"
+                android:layout_marginRight="?listPreferredItemPaddingRight"
+                android:layout_marginTop="?listPreferredItemPaddingLeft"
+                android:layout_marginBottom="?listPreferredItemPaddingRight"
+                android:outlineProvider="background"
+                android:background="@drawable/shape_rounded_article_bg"
+                android:foreground="@drawable/shape_rounded_article_fg">
+
+            <club.andnext.widget.ScaleView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_list_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:paddingTop="?listPreferredItemPaddingLeft">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </club.andnext.widget.ScaleView>
+
+        </FrameLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/shape_bottom_bar_bg">
+        <TextView
+                android:id="@+id/btn_share"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:drawablePadding="?listPreferredItemPaddingLeft"
+                android:drawableTint="@color/colorPrimary"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:text="共享"/>
+    </FrameLayout>
+</LinearLayout>

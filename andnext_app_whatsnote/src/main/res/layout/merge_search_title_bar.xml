@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+        <FrameLayout
+                android:id="@+id/normal_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                    android:id="@+id/title_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:id="@+id/tv_title"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:text="@string/app_name"
+                        android:singleLine="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <FrameLayout
+                    android:id="@+id/btn_navigation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="?listPreferredItemPaddingLeft"
+                    android:background="?actionBarItemBackground"
+                    android:addStatesFromChildren="true">
+
+                <TextView
+                        android:id="@+id/btn_back"
+                        android:textAppearance="?actionMenuTextAppearance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="完成"
+                        android:clickable="true"
+                        android:visibility="gone"/>
+
+            </FrameLayout>
+
+
+        </FrameLayout>
+
+        <app.haiyunshan.whatsnote.widget.TitleBar
+                android:id="@+id/edit_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible">
+
+        </app.haiyunshan.whatsnote.widget.TitleBar>
+
+    </FrameLayout>
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="#f1f2f4"
+            android:addStatesFromChildren="true"
+            android:foreground="?selectableItemBackground"
+            android:layout_marginLeft="?listPreferredItemPaddingLeft"
+            android:layout_marginRight="?listPreferredItemPaddingRight">
+
+        <TextView
+                android:id="@+id/tv_search"
+                android:drawableLeft="@drawable/ic_search_white_24dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:drawableTint="#8e8e97"
+                android:padding="6dp"
+                android:hint="搜索"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </androidx.cardview.widget.CardView>
+
+</merge>

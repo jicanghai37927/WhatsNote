@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+
+    <TextView
+            android:id="@+id/tv_multiple"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="双语"
+            android:textColor="#ffffff"
+            android:background="@drawable/shape_subtitle_tag_bg"
+            android:backgroundTint="#5bc0de"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:layout_marginRight="4dp"/>
+    <TextView
+            android:id="@+id/tv_simplified"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="简体"
+            android:textColor="#ffffff"
+            android:background="@drawable/shape_subtitle_tag_bg"
+            android:backgroundTint="#5cb85c"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:layout_marginRight="4dp"/>
+    <TextView
+            android:id="@+id/tv_traditional"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="繁体"
+            android:textColor="#ffffff"
+            android:background="@drawable/shape_subtitle_tag_bg"
+            android:backgroundTint="#428bca"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:layout_marginRight="4dp"/>
+    <TextView
+            android:id="@+id/tv_language"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="英文"
+            android:textColor="#ffffff"
+            android:background="@drawable/shape_subtitle_tag_bg"
+            android:backgroundTint="#777777"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:layout_marginRight="4dp"/>
+    <TextView
+            android:id="@+id/tv_type"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ASS"
+            android:textColor="#ffffff"
+            android:background="@drawable/shape_subtitle_tag_bg"
+            android:backgroundTint="#777777"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:layout_marginRight="4dp"/>
+</LinearLayout>

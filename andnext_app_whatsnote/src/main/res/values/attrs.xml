@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="title" format="string|reference" />
+
+    <declare-styleable name="RecordIconView">
+        <attr name="mask" format="reference"/>
+        <attr name="radius" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="SearchTitleBar">
+        <attr name="searchVisible" format="boolean"/>
+        <attr name="title"/>
+        <attr name="negativeVisible" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TitleBar">
+        <attr name="title"/>
+    </declare-styleable>
+</resources>

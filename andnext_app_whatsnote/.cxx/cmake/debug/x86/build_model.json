@@ -1,0 +1,71 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "/Users/elevennnn/Documents/workspace_old/WhatsNote",
+      "sdkFolder": "/Users/elevennnn/Documents/android-sdk-macosx",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "ideBuildTargetAbi": "x86_64,x86",
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "/Users/elevennnn/Documents/workspace_old/WhatsNote/andnext_app_whatsnote/build/intermediates",
+      "gradleModulePathName": ":andnext_app_whatsnote",
+      "moduleRootFolder": "/Users/elevennnn/Documents/workspace_old/WhatsNote/andnext_app_whatsnote",
+      "makeFile": "/Users/elevennnn/Documents/workspace_old/WhatsNote/andnext_app_whatsnote/CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "compilerSettingsCacheFolder": "/Users/elevennnn/Documents/workspace_old/WhatsNote/.cxx",
+      "cxxFolder": "/Users/elevennnn/Documents/workspace_old/WhatsNote/andnext_app_whatsnote/.cxx",
+      "ndkFolder": "/Users/elevennnn/Documents/android-sdk-macosx/ndk-bundle",
+      "ndkVersion": "20.0.5594570",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [
+      ""
+    ],
+    "variantName": "debug",
+    "soFolder": "/Users/elevennnn/Documents/workspace_old/WhatsNote/andnext_app_whatsnote/build/intermediates/cmake/debug/lib",
+    "objFolder": "/Users/elevennnn/Documents/workspace_old/WhatsNote/andnext_app_whatsnote/build/intermediates/cmake/debug/obj",
+    "jsonFolder": "/Users/elevennnn/Documents/workspace_old/WhatsNote/andnext_app_whatsnote/.cxx/cmake/debug",
+    "gradleBuildOutputFolder": "/Users/elevennnn/Documents/workspace_old/WhatsNote/andnext_app_whatsnote/.cxx/cxx/debug",
+    "isDebuggableEnabled": true,
+    "validAbiList": [
+      "X86_64",
+      "X86"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "X86",
+  "abiPlatformVersion": 24,
+  "cxxBuildFolder": "/Users/elevennnn/Documents/workspace_old/WhatsNote/andnext_app_whatsnote/.cxx/cmake/debug/x86",
+  "jsonFile": "/Users/elevennnn/Documents/workspace_old/WhatsNote/andnext_app_whatsnote/.cxx/cmake/debug/x86/android_gradle_build.json",
+  "gradleBuildOutputFolder": "/Users/elevennnn/Documents/workspace_old/WhatsNote/andnext_app_whatsnote/.cxx/cxx/debug/x86",
+  "objFolder": "/Users/elevennnn/Documents/workspace_old/WhatsNote/andnext_app_whatsnote/build/intermediates/cmake/debug/obj/x86",
+  "buildCommandFile": "/Users/elevennnn/Documents/workspace_old/WhatsNote/andnext_app_whatsnote/.cxx/cmake/debug/x86/build_command.txt",
+  "buildOutputFile": "/Users/elevennnn/Documents/workspace_old/WhatsNote/andnext_app_whatsnote/.cxx/cmake/debug/x86/build_output.txt",
+  "modelOutputFile": "/Users/elevennnn/Documents/workspace_old/WhatsNote/andnext_app_whatsnote/.cxx/cmake/debug/x86/build_model.json",
+  "cmake": {
+    "cmakeListsWrapperFile": "/Users/elevennnn/Documents/workspace_old/WhatsNote/andnext_app_whatsnote/.cxx/cxx/debug/x86/CMakeLists.txt",
+    "toolchainWrapperFile": "/Users/elevennnn/Documents/workspace_old/WhatsNote/andnext_app_whatsnote/.cxx/cxx/debug/x86/android_gradle_build.toolchain.cmake",
+    "buildGenerationStateFile": "/Users/elevennnn/Documents/workspace_old/WhatsNote/andnext_app_whatsnote/.cxx/cxx/debug/x86/build_generation_state.json",
+    "cacheKeyFile": "/Users/elevennnn/Documents/workspace_old/WhatsNote/andnext_app_whatsnote/.cxx/cxx/debug/x86/compiler_cache_key.json",
+    "compilerCacheUseFile": "/Users/elevennnn/Documents/workspace_old/WhatsNote/andnext_app_whatsnote/.cxx/cxx/debug/x86/compiler_cache_use.json",
+    "compilerCacheWriteFile": "/Users/elevennnn/Documents/workspace_old/WhatsNote/andnext_app_whatsnote/.cxx/cxx/debug/x86/compiler_cache_write.json",
+    "toolchainSettingsFromCacheFile": "/Users/elevennnn/Documents/workspace_old/WhatsNote/andnext_app_whatsnote/.cxx/cxx/debug/x86/compiler_settings_cache.cmake",
+    "cmakeWrappingBaseFolder": "."
+  },
+  "jsonGenerationLoggingRecordFile": "/Users/elevennnn/Documents/workspace_old/WhatsNote/andnext_app_whatsnote/.cxx/cmake/debug/x86/json_generation_record.json",
+  "compileCommandsJsonFile": "/Users/elevennnn/Documents/workspace_old/WhatsNote/andnext_app_whatsnote/.cxx/cmake/debug/x86/compile_commands.json"
+}

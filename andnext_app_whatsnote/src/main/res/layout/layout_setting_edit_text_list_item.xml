@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app.haiyunshan.whatsnote.widget.TextContextEditText
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/edit_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="top|left"
+        android:minLines="3"
+        android:maxLines="14"
+        android:hint="轻点并按住文本框，将激活码粘贴到此处。"
+        android:paddingLeft="?listPreferredItemPaddingLeft"
+        android:paddingRight="?listPreferredItemPaddingRight"
+        android:background="@color/colorSettingItemBackground">
+
+</app.haiyunshan.whatsnote.widget.TextContextEditText>

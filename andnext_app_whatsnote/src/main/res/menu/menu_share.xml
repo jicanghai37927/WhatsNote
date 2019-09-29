@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu_picture"
+          android:title="图片"
+          android:icon="@drawable/shape_icon_picture"
+          app:showAsAction="always"/>
+
+    <item android:id="@+id/menu_plain_text"
+          android:title="文本"
+          android:icon="@drawable/shape_icon_plain_text"
+          app:showAsAction="always"/>
+
+    <item android:id="@+id/menu_markdown"
+          android:title="Markdown"
+          android:icon="@drawable/shape_icon_markdown"
+          app:showAsAction="always"/>
+
+    <item android:id="@+id/menu_hexo"
+          android:title="HEXO\nMarkdown"
+          android:icon="@drawable/shape_icon_hexo"
+          app:showAsAction="always"/>
+</menu>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".laboratory.NcmConverterFragment">
+
+    <app.haiyunshan.whatsnote.widget.SearchTitleBar
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/shape_top_bar_bg"
+            app:title="NCM格式转换器">
+
+    </app.haiyunshan.whatsnote.widget.SearchTitleBar>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:overScrollMode="never" />
+
+        <TextView
+                android:id="@+id/empty_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="64dp"
+                android:text="无NCM文件"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#7f7f7f"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+    </FrameLayout>
+</LinearLayout>

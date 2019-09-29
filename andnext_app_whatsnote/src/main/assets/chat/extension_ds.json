@@ -1,0 +1,73 @@
+{
+
+  "favorite": [
+    "photo",
+    "gallery",
+    "music",
+    "video"
+  ],
+
+  "list":
+  [
+    {
+      "id": "photo",
+      "name": "照片",
+      "icon": "photo.png",
+      "enable": true
+    },
+    {
+      "id": "gallery",
+      "name": "图像画廊",
+      "icon": "gallery.png",
+      "enable": true
+    },
+    {
+      "id": "music",
+      "name": "音乐",
+      "icon": "music.png",
+      "enable": true
+    },
+    {
+      "id": "video",
+      "name": "视频",
+      "icon": "video.png",
+      "enable": true
+    },
+    {
+      "id": "camera",
+      "name": "录像",
+      "icon": "camera.png",
+      "enable": true
+    },
+    {
+      "id": "lyric",
+      "name": "歌词",
+      "icon": "lyric.png",
+      "enable": true
+    },
+    {
+      "id": "subtitle",
+      "name": "字幕",
+      "icon": "subtitle.png",
+      "enable": true
+    },
+    {
+      "id": "formula",
+      "name": "方程",
+      "icon": "formula.png",
+      "enable": true
+    },
+    {
+      "id": "location",
+      "name": "地理位置",
+      "icon": "location.png",
+      "enable": false
+    },
+    {
+      "id": "weather",
+      "name": "天气",
+      "icon": "weather.png",
+      "enable": false
+    }
+  ]
+}

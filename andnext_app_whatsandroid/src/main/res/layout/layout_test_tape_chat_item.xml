@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:animateLayoutChanges="false">
+
+    <LinearLayout
+            android:id="@+id/speaker_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+        <TextView
+                android:id="@+id/tv_speaker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="打开"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:textColor="#287aff"
+                android:visibility="invisible"/>
+
+        <ImageView
+                android:id="@+id/iv_speaker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/test_ic_speaker"
+                android:layout_marginRight="6dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/tape_play_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/test_ic_outgoing_bubble_single_tail"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+        <FrameLayout
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:layout_marginRight="4dp">
+
+            <club.andnext.tape.RingView
+                    android:id="@+id/ring_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/test_shape_circle_bg"/>
+
+            <ImageView
+                    android:id="@+id/iv_action"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/test_ic_record_pause"/>
+        </FrameLayout>
+
+        <club.andnext.tape.TapePlayView
+                android:id="@+id/tape_play_view"
+                android:layout_width="160dp"
+                android:layout_height="28dp"
+                android:background="#00000000">
+
+        </club.andnext.tape.TapePlayView>
+
+        <club.andnext.widget.Chronotimer
+                android:id="@+id/chronometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+                android:textColor="#ffffff"
+                android:text="0:00"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="12dp"/>
+    </LinearLayout>
+</LinearLayout>

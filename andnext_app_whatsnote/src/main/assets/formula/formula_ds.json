@@ -1,0 +1,61 @@
+{
+  "list":
+  [
+    {
+      "symbol": "+",
+      "text": "+"
+    },
+    {
+      "symbol": "-",
+      "text": "-"
+    },
+    {
+      "symbol": "×",
+      "text": "\\times "
+    },
+    {
+      "symbol": "÷",
+      "text": "\\div "
+    },
+    {
+      "symbol": "=",
+      "text": "="
+    },
+    {
+      "symbol": "^",
+      "text": "^"
+    },
+    {
+      "symbol": "_",
+      "text": "_"
+    },
+    {
+      "symbol": "\\",
+      "text": "\\"
+    },
+    {
+      "symbol": "{",
+      "text": "{"
+    },
+    {
+      "symbol": "}",
+      "text": "}"
+    },
+    {
+      "symbol": "<",
+      "text": "<"
+    },
+    {
+      "symbol": ">",
+      "text": ">"
+    },
+    {
+      "symbol": "(",
+      "text": "("
+    },
+    {
+      "symbol": ")",
+      "text": ")"
+    }
+  ]
+}

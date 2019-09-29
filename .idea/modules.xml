@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/WhatsNote.iml" filepath="$PROJECT_DIR$/WhatsNote.iml" />
+      <module fileurl="file://$PROJECT_DIR$/andnext_app_whatsandroid/andnext_app_whatsandroid.iml" filepath="$PROJECT_DIR$/andnext_app_whatsandroid/andnext_app_whatsandroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/andnext_app_whatsdownloader/andnext_app_whatsdownloader.iml" filepath="$PROJECT_DIR$/andnext_app_whatsdownloader/andnext_app_whatsdownloader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/andnext_app_whatsnote/andnext_app_whatsnote.iml" filepath="$PROJECT_DIR$/andnext_app_whatsnote/andnext_app_whatsnote.iml" />
+      <module fileurl="file://$PROJECT_DIR$/andnext_base/andnext_base.iml" filepath="$PROJECT_DIR$/andnext_base/andnext_base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/andnext_dialog/andnext_dialog.iml" filepath="$PROJECT_DIR$/andnext_dialog/andnext_dialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/andnext_download/andnext_download.iml" filepath="$PROJECT_DIR$/andnext_download/andnext_download.iml" />
+      <module fileurl="file://$PROJECT_DIR$/andnext_drawable/andnext_drawable.iml" filepath="$PROJECT_DIR$/andnext_drawable/andnext_drawable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/andnext_glide/andnext_glide.iml" filepath="$PROJECT_DIR$/andnext_glide/andnext_glide.iml" />
+      <module fileurl="file://$PROJECT_DIR$/andnext_helper/andnext_helper.iml" filepath="$PROJECT_DIR$/andnext_helper/andnext_helper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/andnext_java/andnext_java.iml" filepath="$PROJECT_DIR$/andnext_java/andnext_java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/andnext_overscroll/andnext_overscroll.iml" filepath="$PROJECT_DIR$/andnext_overscroll/andnext_overscroll.iml" />
+      <module fileurl="file://$PROJECT_DIR$/andnext_recyclerview/andnext_recyclerview.iml" filepath="$PROJECT_DIR$/andnext_recyclerview/andnext_recyclerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/andnext_snapshot/andnext_snapshot.iml" filepath="$PROJECT_DIR$/andnext_snapshot/andnext_snapshot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/andnext_text/andnext_text.iml" filepath="$PROJECT_DIR$/andnext_text/andnext_text.iml" />
+      <module fileurl="file://$PROJECT_DIR$/andnext_theme/andnext_theme.iml" filepath="$PROJECT_DIR$/andnext_theme/andnext_theme.iml" />
+      <module fileurl="file://$PROJECT_DIR$/andnext_ucrop/andnext_ucrop.iml" filepath="$PROJECT_DIR$/andnext_ucrop/andnext_ucrop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/andnext_utils/andnext_utils.iml" filepath="$PROJECT_DIR$/andnext_utils/andnext_utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/andnext_widget/andnext_widget.iml" filepath="$PROJECT_DIR$/andnext_widget/andnext_widget.iml" />
+      <module fileurl="file://$PROJECT_DIR$/andnext_xsltml/andnext_xsltml.iml" filepath="$PROJECT_DIR$/andnext_xsltml/andnext_xsltml.iml" />
+    </modules>
+  </component>
+</project>

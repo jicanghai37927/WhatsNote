@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              tools:context=".record.EditRecordFragment">
+
+    <app.haiyunshan.whatsnote.widget.TitleBar
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/shape_title_bar_bg">
+
+    </app.haiyunshan.whatsnote.widget.TitleBar>
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+        <LinearLayout android:orientation="vertical"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:gravity="center_horizontal"
+                      android:layout_marginBottom="?listPreferredItemPaddingRight">
+
+            <app.haiyunshan.whatsnote.widget.RecordIconView
+                    android:id="@+id/iv_icon"
+                    android:layout_width="360dp"
+                    android:layout_height="240dp"
+                    android:src="@drawable/ic_folder_white_24dp"
+                    android:tint="@color/colorFolder"
+                    app:radius="16dp"
+                    app:mask="@drawable/shape_icon_mask_thick"
+                    android:layout_marginTop="?listPreferredItemPaddingLeft"
+                    android:layout_marginBottom="?listPreferredItemPaddingRight">
+
+            </app.haiyunshan.whatsnote.widget.RecordIconView>
+
+            <club.andnext.widget.ClearEditText
+                    android:id="@+id/edit_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_marginLeft="?listPreferredItemPaddingLeft"
+                    android:layout_marginRight="?listPreferredItemPaddingRight"
+                    android:padding="?listPreferredItemPaddingLeft"
+                    android:singleLine="true"
+                    android:drawablePadding="8dp"
+                    android:background="@drawable/shape_edit_record_name_bg">
+                <requestFocus/>
+            </club.andnext.widget.ClearEditText>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

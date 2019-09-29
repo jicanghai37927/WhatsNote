@@ -1,0 +1,19 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
+
+package org.apache.commons.io.input;
+
+import java.io.InputStream;
+
+public class ClosedInputStream extends InputStream {
+    public static final ClosedInputStream CLOSED_INPUT_STREAM = new ClosedInputStream();
+
+    public ClosedInputStream() {
+    }
+
+    public int read() {
+        return -1;
+    }
+}

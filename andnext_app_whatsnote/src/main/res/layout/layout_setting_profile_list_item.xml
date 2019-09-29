@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="80dp"
+        android:background="@color/colorSettingItemBackground"
+        android:paddingLeft="?listPreferredItemPaddingLeft"
+        android:paddingRight="?listPreferredItemPaddingRight"
+        android:gravity="center_vertical"
+
+        android:foreground="?selectableItemBackground">
+
+
+    <FrameLayout
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:padding="2dp"
+            android:background="@drawable/shape_master_bg"
+            android:layout_marginRight="?listPreferredItemPaddingRight">
+
+        <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_portrait_bg"
+                android:outlineProvider="background"/>
+    </FrameLayout>
+
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/tv_name"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/tv_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:maxLines="1"
+                android:lines="1"
+                android:singleLine="true"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"/>
+    </LinearLayout>
+
+
+    <ImageView
+            android:id="@+id/iv_chevron"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_chevron_right_white_24dp"
+            android:tint="@color/colorChevron"/>
+
+</LinearLayout>

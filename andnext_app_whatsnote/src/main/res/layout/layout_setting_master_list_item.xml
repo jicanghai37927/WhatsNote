@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="?listPreferredItemPaddingLeft"
+        android:paddingRight="?listPreferredItemPaddingRight"
+        android:gravity="center_horizontal">
+
+    <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="2dp"
+            android:background="@drawable/shape_master_bg">
+
+        <FrameLayout
+                android:id="@+id/icon_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:foreground="?selectableItemBackgroundBorderless"
+                android:background="@drawable/shape_portrait_bg"
+                android:outlineProvider="background">
+
+            <ImageView
+                    android:id="@+id/iv_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="编辑"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:background="#000000"
+                    android:textColor="#ffffff"/>
+        </FrameLayout>
+    </FrameLayout>
+
+    <TextView
+            android:id="@+id/tv_name"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center_horizontal"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+
+</LinearLayout>

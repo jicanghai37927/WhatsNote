@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorLink="?colorPrimary"
+        android:textColorHighlight="@color/colorHighlightText"
+        android:textIsSelectable="true"
+        android:textSize="14sp"
+        android:minHeight="200dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:background="@color/colorSettingItemBackground"
+        android:paddingLeft="?listPreferredItemPaddingLeft"
+        android:paddingRight="?listPreferredItemPaddingRight"/>
+

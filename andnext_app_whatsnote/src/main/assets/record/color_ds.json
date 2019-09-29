@@ -1,0 +1,69 @@
+{
+  "list":
+  [
+    {
+      "id": "transparent",
+      "icon": "#00000000",
+      "color": "#474747",
+      "check": "#606060",
+      "bg": "#e0e0e0"
+    },
+
+    {
+      "id": "red",
+      "icon": "#fd3c2f",
+      "color": "#663f3d",
+      "check": "#ff3b30",
+      "bg": "#ffd8d6"
+    },
+
+    {
+      "id": "orange",
+      "icon": "#fd9600",
+      "color": "#665133",
+      "check": "#ff9500",
+      "bg": "#ffeacc"
+    },
+
+    {
+      "id": "yellow",
+      "icon": "#fdcd01",
+      "color": "#675d34",
+      "check": "#ffcc00",
+      "bg": "#fff5cc"
+    },
+
+    {
+      "id": "green",
+      "icon": "#4bda65",
+      "color": "#425e47",
+      "check": "#4cd964",
+      "bg": "#dbf7e0"
+    },
+
+    {
+      "id": "blue",
+      "icon": "#007bff",
+      "color": "#334b66",
+      "check": "#007aff",
+      "bg": "#cce4ff"
+    },
+
+    {
+      "id": "purple",
+      "icon": "#5755d7",
+      "color": "#45445e",
+      "check": "#5856d6",
+      "bg": "#deddf7"
+    },
+
+    {
+      "id": "gray",
+      "icon": "#8e8e95",
+      "color": "#4f4f50",
+      "check": "#8e8e93",
+      "bg": "#e8e8e9"
+    }
+
+  ]
+}

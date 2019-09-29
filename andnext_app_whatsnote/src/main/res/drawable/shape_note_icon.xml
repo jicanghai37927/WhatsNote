@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <corners android:radius="@dimen/recordIconRadius"/>
+    <solid android:color="#ffffff"/>
+    <stroke android:color="@color/colorRecordStroke" android:width="1px"/>
+    <size android:width="40dp" android:height="60dp"/>
+</shape>

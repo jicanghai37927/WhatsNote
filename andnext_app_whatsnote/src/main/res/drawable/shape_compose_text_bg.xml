@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <solid android:color="@color/colorSettingItemBackground"/>
+        </shape>
+    </item>
+
+    <item android:gravity="bottom">
+        <shape>
+            <solid android:color="@color/colorDivider"/>
+            <size android:height="1px"></size>
+        </shape>
+    </item>
+
+    <item android:gravity="top">
+        <shape>
+            <solid android:color="@color/colorDivider"/>
+            <size android:height="1px"></size>
+        </shape>
+    </item>
+</layer-list>

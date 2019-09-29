@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorWindowBackground">#ffffff</color>
+    <color name="colorFolder">#86d8fa</color>
+    <color name="colorDisable">#e4e3de</color>
+    <color name="colorDivider">#3a3f3e3d</color>
+    <color name="colorChevron">#cbcccd</color>
+    <color name="colorRecordStroke">#20000000</color>
+    <color name="colorPrimaryAlpha">#20ed8c00</color>
+    <color name="colorIcon">#000000</color>
+    <color name="colorDrag">#d2d2d8</color>
+</resources>

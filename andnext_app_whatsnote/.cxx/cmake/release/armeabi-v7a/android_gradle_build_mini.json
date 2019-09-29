@@ -1,0 +1,16 @@
+{
+  "buildFiles": [
+    "/Users/elevennnn/Documents/workspace_old/WhatsNote/andnext_app_whatsnote/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/elevennnn/Documents/android-sdk-macosx/cmake/3.6.4111459/bin/cmake --build /Users/elevennnn/Documents/workspace_old/WhatsNote/andnext_app_whatsnote/.cxx/cmake/release/armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "native-lib-Release-armeabi-v7a": {
+      "artifactName": "native-lib",
+      "buildCommand": "/Users/elevennnn/Documents/android-sdk-macosx/cmake/3.6.4111459/bin/cmake --build /Users/elevennnn/Documents/workspace_old/WhatsNote/andnext_app_whatsnote/.cxx/cmake/release/armeabi-v7a --target native-lib",
+      "abi": "armeabi-v7a",
+      "output": "/Users/elevennnn/Documents/workspace_old/WhatsNote/andnext_app_whatsnote/build/intermediates/cmake/release/obj/armeabi-v7a/libnative-lib.so"
+    }
+  }
+}

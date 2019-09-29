@@ -1,0 +1,10 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{ngerman}
+\usepackage{graphicx}
+\usepackage{dsfont}
+\usepackage{lscape}
+\pagestyle{headings}
+
+\begin{document}
+

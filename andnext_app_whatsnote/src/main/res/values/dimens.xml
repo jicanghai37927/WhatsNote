@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="entrance_item_padding">12dp</dimen>
+    <dimen name="entrance_section_item_padding_bottom">6dp</dimen>
+
+    <dimen name="record_item_padding">12dp</dimen>
+
+    <dimen name="recordPreferredItemHeight">72dp</dimen>
+
+    <dimen name="recordIconSize">56dp</dimen>
+    <dimen name="recordIconRadius">4dp</dimen>
+
+    <dimen name="paragraphTextSize">18sp</dimen>
+
+    <dimen name="radioRadius">4dp</dimen>
+
+    <dimen name="levelPadding">18dp</dimen>
+
+    <dimen name="pictureGalleryGutter">36dp</dimen>
+
+    <dimen name="entranceItemHeight">44dp</dimen>
+    <dimen name="settingItemHeight">44dp</dimen>
+
+    <dimen name="shareProfileMargin">64dp</dimen>
+
+    <dimen name="tagItemHeight">40dp</dimen>
+    <dimen name="tagRadius">4dp</dimen>
+    <dimen name="tagIconSize">12dp</dimen>
+    <dimen name="tagCheckSize">16dp</dimen>
+    <dimen name="tagMarginTop">8dp</dimen>
+
+    <dimen name="colorSize">16dp</dimen>
+    <dimen name="colorPadding">1dp</dimen>
+
+    <dimen name="pictureOutlineRadius">6dp</dimen>
+    <dimen name="numericalPadding">6dp</dimen>
+
+    <dimen name="formulaTextSize">48sp</dimen>
+    <dimen name="formulaLeft">8dp</dimen>
+    <dimen name="formulaRight">0dp</dimen>
+    <dimen name="formulaTop">8dp</dimen>
+    <dimen name="formulaBottom">8dp</dimen>
+
+    <dimen name="chatTapePaddingLeft">4dp</dimen>
+    <dimen name="chatTapePaddingRight">4dp</dimen>
+    <dimen name="chatTapePaddingTop">4dp</dimen>
+    <dimen name="chatTapePaddingBottom">4dp</dimen>
+
+    <dimen name="chatMusicPaddingLeft">12dp</dimen>
+    <dimen name="chatMusicPaddingRight">18dp</dimen>
+    <dimen name="chatMusicPaddingTop">8dp</dimen>
+    <dimen name="chatMusicPaddingBottom">8dp</dimen>
+
+    <dimen name="websiteTouchIconSize">48dp</dimen>
+    <dimen name="websiteShortcutIconSize">20dp</dimen>
+    <dimen name="websiteMiddleIconSize">28dp</dimen>
+    <dimen name="websiteCornerRadius">4dp</dimen>
+
+    <dimen name="chatGalleryGutter">0dp</dimen>
+    <dimen name="galleryIndicatorRadius">4dp</dimen>
+    <dimen name="galleryIndicatorPadding">8dp</dimen>
+    <dimen name="galleryIndicatorDecor">20dp</dimen>
+</resources>

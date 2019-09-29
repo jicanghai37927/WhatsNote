@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <club.andnext.widget.ParagraphEdit
+            android:id="@+id/edit_paragraph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="?listPreferredItemPaddingLeft"
+            android:layout_marginRight="?listPreferredItemPaddingRight"
+            android:layout_marginTop="0dp"
+            android:allowUndo="false"
+            android:layout_marginBottom="?listPreferredItemPaddingLeft"
+            android:background="@null"
+            android:inputType="textCapSentences|textMultiLine"
+            android:textSize="@dimen/paragraphTextSize"
+            android:textColor="#000000"/>
+
+</LinearLayout>

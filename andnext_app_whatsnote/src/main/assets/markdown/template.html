@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css"
+          rel="stylesheet"/>
+    <style>
+        .markdown-body
+        {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        @media (max-width: 767px)
+        {
+            .markdown-body
+            {
+                padding: 15px;
+            }
+        }
+    </style>
+
+
+    <link href="https://cdn.bootcss.com/highlight.js/9.15.6/styles/default.min.css" rel="stylesheet"/>
+
+    <script src="https://cdn.bootcss.com/highlight.js/9.15.6/highlight.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.6.2/marked.min.js"></script>
+
+    <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async>
+    </script>
+
+    <script>
+
+		marked.setOptions({
+		    renderer: new marked.Renderer(),
+		    gfm: true,
+		    tables: true,
+		    breaks: true,
+		    pedantic: false,
+		    sanitize: false,
+		    smartLists: true,
+		    smartypants: false,
+		    highlight: function (code, lang) {
+		          if (lang && hljs.getLanguage(lang)) {
+		            return hljs.highlight(lang, code, true).value;
+		          } else {
+		            return hljs.highlightAuto(code).value;
+		          }
+		      }
+		});
+
+    </script>
+
+    <title>{title}</title>
+</head>
+
+<body>
+<article id="content" class="markdown-body" style="hint-align: left;"></article>
+
+<script>
+  	var hint = '```java\npublic class BitmapUtils {}\nString hint = null; \n```';
+
+  	hint = '{markdown}';
+  	hint = marked(hint);
+
+    document.getElementById('content').innerHTML = hint;
+</script>
+</body>
+
+</html>

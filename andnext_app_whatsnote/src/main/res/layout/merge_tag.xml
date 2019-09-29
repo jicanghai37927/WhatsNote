@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+
+    <club.andnext.widget.CircleColorView
+            android:id="@+id/iv_end"
+            android:color="#00000000"
+            android:layout_width="@dimen/colorSize"
+            android:layout_height="@dimen/colorSize"
+            android:padding="@dimen/colorPadding"
+            android:background="@drawable/shape_color_bg"
+            android:layout_marginLeft="16dp"
+    />
+
+    <club.andnext.widget.CircleColorView
+            android:id="@+id/iv_middle"
+            android:color="#00000000"
+            android:layout_width="@dimen/colorSize"
+            android:layout_height="@dimen/colorSize"
+            android:padding="@dimen/colorPadding"
+            android:background="@drawable/shape_color_bg"
+            android:layout_marginLeft="8dp"
+    />
+
+    <club.andnext.widget.CircleColorView
+            android:id="@+id/iv_start"
+            android:color="#00000000"
+            android:layout_width="@dimen/colorSize"
+            android:layout_height="@dimen/colorSize"
+            android:padding="@dimen/colorPadding"
+            android:background="@drawable/shape_color_bg"
+    />
+
+
+</merge>

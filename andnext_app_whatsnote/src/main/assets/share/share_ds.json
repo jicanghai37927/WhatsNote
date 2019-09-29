@@ -1,0 +1,50 @@
+{
+  "list":
+  [
+    {
+      "id": "com.tencent.mm.ui.tools.ShareImgUI",
+      "name": "发送给朋友"
+    },
+    {
+      "id": "com.tencent.mm.ui.tools.ShareToTimeLineUI",
+      "name": "发送到朋友圈"
+    },
+    {
+      "id": "com.sina.weibo.composerinde.ComposerDispatchActivity",
+      "name": "微博"
+    },
+    {
+      "id": "com.weico.international.activity.compose.SeaComposeActivity",
+      "name": "微博国际版"
+    },
+    {
+      "id": "com.tencent.mobileqq.activity.JumpActivity",
+      "name": "发送给好友"
+    },
+    {
+      "id": "com.alibaba.android.rimet.biz.BokuiActivity",
+      "name": "钉钉"
+    },
+    {
+      "id": "com.tencent.mm.ui.tools.AddFavoriteUI",
+      "name": "添加到微信收藏"
+    },
+    {
+      "id": "com.tencent.mobileqq.activity.qfileJumpActivity",
+      "name": "发送到我的电脑"
+    },
+    {
+      "id": "cooperation.qlink.QlinkShareJumpActivity",
+      "name": "面对面快传（免流量）"
+    },
+    {
+      "id": "com.sina.weibo.weiyou.share.WeiyouShareDispatcher",
+      "name": "私信"
+    },
+    {
+      "id": "cooperation.qqfav.widget.QfavJumpActivity",
+      "name": "保存到QQ收藏"
+    }
+
+  ]
+}

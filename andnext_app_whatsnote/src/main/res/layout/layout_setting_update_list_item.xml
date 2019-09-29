@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/settingItemHeight"
+        android:background="@color/colorSettingItemBackground"
+        android:paddingLeft="?listPreferredItemPaddingLeft"
+        android:paddingRight="?listPreferredItemPaddingRight"
+        android:gravity="center_vertical"
+        android:foreground="?selectableItemBackground">
+
+    <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="?listPreferredItemPaddingRight"/>
+
+    <TextView
+            android:id="@+id/tv_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:lines="1"
+            android:singleLine="true"
+            android:duplicateParentState="true"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/tv_text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:singleLine="true"/>
+
+    <ProgressBar
+            android:id="@+id/progress_circular"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+    <TextView
+            android:id="@+id/tv_badge"
+            android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="22dp"
+            android:minHeight="22dp"
+            android:text="1"
+            android:background="@drawable/shape_badge_bg"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textStyle="normal"
+            android:lines="1"
+            android:singleLine="true"/>
+
+    <ImageView
+            android:id="@+id/iv_chevron"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_chevron_right_white_24dp"
+            android:tint="@color/colorChevron"/>
+
+</LinearLayout>

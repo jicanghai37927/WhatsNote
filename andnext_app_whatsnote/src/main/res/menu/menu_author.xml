@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+            android:id="@+id/menu_visible"
+            android:title="显示"
+            app:showAsAction="always"
+            android:visible="true"/>
+
+    <item
+            android:id="@+id/menu_gone"
+            android:title="隐藏"
+            app:showAsAction="always"
+            android:visible="true"/>
+
+    <item
+            android:id="@+id/menu_edit"
+            android:title="编辑"
+            app:showAsAction="always"
+            android:visible="true"/>
+
+</menu>

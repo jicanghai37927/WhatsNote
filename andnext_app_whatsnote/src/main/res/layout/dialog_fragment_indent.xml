@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            app:cardCornerRadius="18dp"
+            android:background="@color/colorWindowBackground"
+            android:layout_gravity="bottom"
+            android:clickable="true"
+            android:soundEffectsEnabled="false"
+            android:hapticFeedbackEnabled="false"
+            android:layout_marginBottom="-18dp">
+
+        <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="18dp">
+
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

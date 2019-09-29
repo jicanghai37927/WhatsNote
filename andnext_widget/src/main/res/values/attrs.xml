@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PlaceholderView">
+        <attr name="referTo" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleColorView">
+        <attr name="android:color" format="color|reference"/>
+        <attr name="replaceColor" format="color|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="ConstraintScrollView">
+        <attr name="maxHeight" format="dimension|reference"/>
+    </declare-styleable>
+</resources>

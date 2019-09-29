@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="app.haiyunshan.whatsnote">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+            android:name=".WhatsApp"
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:largeHeap="true"
+            android:networkSecurityConfig="@xml/network_security_config"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            android:usesCleartextTraffic="true">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".laboratory.NcmConverterActivity"></activity>
+        <activity android:name=".laboratory.QmcConverterActivity"></activity>
+        <activity
+                android:name=".laboratory.ImageSnifferActivity"
+                android:configChanges="orientation|screenSize|screenLayout|keyboard"
+                android:windowSoftInputMode="adjustNothing|stateHidden" />
+        <activity
+                android:name=".laboratory.ImageDownloaderActivity"
+                android:configChanges="orientation|screenSize|screenLayout|keyboard"
+                android:windowSoftInputMode="adjustNothing|stateHidden" />
+        <activity android:name=".PhotoViewerActivity" />
+        <activity android:name=".TagRecordActivity" />
+        <activity android:name=".SearchRecordActivity" />
+        <activity
+                android:name=".FolderRecordActivity"
+                android:windowSoftInputMode="stateAlwaysHidden|adjustNothing" />
+        <activity android:name=".RecentRecordActivity" />
+        <activity
+                android:name=".EditRecordActivity"
+                android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+                android:name=".ComposeArticleActivity"
+                android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+                android:name=".ComposeFormulaActivity"
+                android:theme="@style/AppTheme.Formula"
+                android:windowSoftInputMode="adjustResize|stateVisible" />
+        <activity
+                android:name=".OutlineActivity"
+                android:theme="@style/AppTheme.Outline" />
+        <activity android:name=".TargetFolderActivity" />
+        <activity android:name=".PictureGalleryActivity" />
+        <activity android:name=".PictureListActivity" />
+        <activity
+                android:name=".SettingActivity"
+                android:theme="@style/AppTheme.Setting" />
+        <activity
+                android:name=".ProfileActivity"
+                android:theme="@style/AppTheme.Setting" />
+        <activity
+                android:name=".ComposeTextActivity"
+                android:theme="@style/AppTheme.Setting"
+                android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+                android:name="club.andnext.ucrop.UCropActivity"
+                android:theme="@style/AppTheme.Crop" />
+        <activity
+                android:name=".ShareArticleActivity"
+                android:windowSoftInputMode="adjustNothing|stateAlwaysHidden" />
+        <activity android:name=".TagActivity" />
+        <activity
+                android:name=".ComposeTagActivity"
+                android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+                android:name=".UpdateActivity"
+                android:theme="@style/AppTheme.Setting" />
+        <activity android:name=".SimpleTextActivity" />
+        <activity
+                android:name=".AutoDownloadActivity"
+                android:theme="@style/AppTheme.Setting" />
+        <activity
+                android:name=".AboutActivity"
+                android:theme="@style/AppTheme.Setting" />
+
+        <meta-data
+                android:name="notch.config"
+                android:value="portrait|landscape" />
+
+        <provider
+                android:name="androidx.core.content.FileProvider"
+                android:authorities="app.haiyunshan.whatsnote.fileprovider"
+                android:exported="false"
+                android:grantUriPermissions="true">
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

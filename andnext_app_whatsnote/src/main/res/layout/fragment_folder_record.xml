@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".record.FolderRecordFragment">
+
+    <app.haiyunshan.whatsnote.widget.SearchTitleBar
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    </app.haiyunshan.whatsnote.widget.SearchTitleBar>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:id="@+id/layout_record"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/tv_trash"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="?listPreferredItemPaddingLeft"
+                    android:gravity="center"
+                    android:textSize="19sp"
+                    android:hint="最近删除的项目可能会被您的存储空间服务商永久删除。"/>
+
+            <include layout="@layout/fragment_named_record_list"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/layout_error"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginBottom="?actionBarSize"
+                android:padding="?listPreferredItemPaddingLeft">
+
+            <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="内容不可用"
+                    android:textSize="24sp"
+                    android:paddingLeft="?listPreferredItemPaddingLeft"
+                    android:paddingRight="?listPreferredItemPaddingRight"
+            />
+
+            <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="无法显示文件夹内容，因为出现了某个未知的错误。"
+                    android:textSize="19sp"
+                    android:paddingLeft="?listPreferredItemPaddingLeft"
+                    android:paddingRight="?listPreferredItemPaddingRight"
+            />
+
+            <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

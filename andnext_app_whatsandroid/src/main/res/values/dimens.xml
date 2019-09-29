@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="entrance_item_padding">12dp</dimen>
+    <dimen name="entrance_section_item_padding_bottom">6dp</dimen>
+
+    <dimen name="record_item_padding">12dp</dimen>
+
+    <dimen name="recordPreferredItemHeight">72dp</dimen>
+
+    <dimen name="recordIconSize">56dp</dimen>
+    <dimen name="recordIconRadius">4dp</dimen>
+
+    <dimen name="paragraphTextSize">18sp</dimen>
+
+    <dimen name="radioRadius">4dp</dimen>
+
+    <dimen name="levelPadding">18dp</dimen>
+
+    <dimen name="pictureGalleryGutter">36dp</dimen>
+
+    <dimen name="entranceItemHeight">44dp</dimen>
+</resources>

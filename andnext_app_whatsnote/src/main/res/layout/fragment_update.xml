@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              tools:context=".setting.BasePreferenceFragment">
+
+    <app.haiyunshan.whatsnote.widget.SearchTitleBar
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            app:searchVisible="false"
+            app:title="设置"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_preference_top_bar_bg">
+
+    </app.haiyunshan.whatsnote.widget.SearchTitleBar>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="?listPreferredItemPaddingLeft"
+                android:paddingBottom="?listPreferredItemPaddingRight"
+                android:clipToPadding="false"
+                android:visibility="invisible"
+                android:overScrollMode="never">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+                android:id="@+id/layout_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="96dp"
+                android:orientation="horizontal">
+
+            <ProgressBar
+                    style="@android:style/Widget.ProgressBar.Small"
+                    android:layout_marginRight="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="正在检查更新..."/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

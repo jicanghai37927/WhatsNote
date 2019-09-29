@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".tag.BaseComposeTagFragment">
+
+    <app.haiyunshan.whatsnote.widget.TitleBar
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/shape_title_bar_bg">
+
+    </app.haiyunshan.whatsnote.widget.TitleBar>
+
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+                                           android:layout_height="match_parent"
+                                           android:fillViewport="true">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="?listPreferredItemPaddingLeft">
+
+            <LinearLayout
+                    android:id="@+id/edit_layout"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:background="@drawable/shape_edit_tag_bg"
+                    android:outlineProvider="background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/tagItemHeight">
+
+                <club.andnext.widget.CircleColorView
+                        android:id="@+id/iv_icon"
+                        android:layout_width="@dimen/tagIconSize"
+                        android:layout_height="@dimen/tagIconSize"
+                        android:color="@android:color/transparent"
+                        android:layout_marginLeft="?listPreferredItemPaddingLeft"
+                        android:layout_marginRight="?listPreferredItemPaddingRight"
+                        app:replaceColor="@color/anc_replace_circle_color"/>
+
+                <EditText
+                        android:id="@+id/edit_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:lines="1"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Menu"
+                        android:layout_marginRight="?listPreferredItemPaddingRight"
+                        android:background="@null"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/color_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="?listPreferredItemPaddingLeft"
+                    android:orientation="horizontal">
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

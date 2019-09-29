@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".TestGifActivity">
+
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:text="测试最后一帧"
+    android:onClick="onTestClick"/>
+
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="转换图片"
+            android:onClick="onTransformClick"/>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ed8c00</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorWindowBackground">#ffffff</color>
+
+    <color name="colorFolder">#86d8fa</color>
+    <color name="colorDisable">#e4e3de</color>
+    <color name="colorDivider">#3a3f3e3d</color>
+    <color name="colorChevron">#cbcccd</color>
+    <color name="colorRecordStroke">#20000000</color>
+    <color name="colorPrimaryAlpha">#20ed8c00</color>
+    <color name="colorIcon">#000000</color>
+    <color name="colorDrag">#d2d2d8</color>
+
+    <color name="colorFormulaWindowBackground">#d1d4d9</color>
+    <color name="colorSettingWindowBackground">#efeff6</color>
+    <color name="colorSettingItemBackground">#feffff</color>
+
+    <color name="colorOutlineIcon">#737373</color>
+    <color name="colorHighlightText">#40ed8c00</color>
+
+    <color name="colorLyricLoading">#eeeeee</color>
+    <color name="colorLyricTitle">#000000</color>
+    <color name="colorLyricArtist">#a1a1a5</color>
+</resources>

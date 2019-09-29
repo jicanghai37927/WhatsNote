@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical"
+             tools:context=".song.SongPickerFragment">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@drawable/shape_top_bar_bg">
+
+        <app.haiyunshan.whatsnote.widget.TitleBar
+                android:id="@+id/title_bar"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                app:title="歌词">
+
+        </app.haiyunshan.whatsnote.widget.TitleBar>
+
+        <RadioGroup
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="?listPreferredItemPaddingLeft"
+                android:layout_marginRight="?listPreferredItemPaddingRight"
+                android:paddingBottom="8dp"
+                android:gravity="center_vertical">
+
+            <RadioButton
+                    android:id="@+id/rb_netease"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="28dp"
+                    android:paddingRight="28dp"
+                    android:gravity="center"
+                    android:checked="true"
+                    android:background="@drawable/selector_radio_bg_left"
+                    android:button="@null"
+                    android:textColor="@color/selector_radio_button"
+                    android:text="网易云音乐"/>
+
+            <RadioButton
+                    android:id="@+id/rb_kugou"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="28dp"
+                    android:paddingRight="28dp"
+                    android:gravity="center"
+                    android:background="@drawable/selector_radio_bg_right"
+                    android:button="@null"
+                    android:textColor="@color/selector_radio_button"
+                    android:text="酷狗音乐"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <club.andnext.widget.SteelViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never">
+
+    </club.andnext.widget.SteelViewPager>
+
+</LinearLayout>

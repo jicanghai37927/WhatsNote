@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:gravity="center_vertical"
+              android:background="@drawable/shape_create_tag_bg"
+              android:foreground="?selectableItemBackground"
+              android:outlineProvider="background"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:minHeight="@dimen/tagItemHeight">
+
+    <club.andnext.widget.CircleColorView
+            android:layout_width="@dimen/tagIconSize"
+            android:layout_height="@dimen/tagIconSize"
+            android:color="@android:color/transparent"
+            android:layout_marginLeft="?listPreferredItemPaddingLeft"
+            android:layout_marginRight="?listPreferredItemPaddingRight"
+            app:replaceColor="@color/anc_replace_circle_color"/>
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Menu"
+            android:hint="添加新标签"/>
+
+    <ImageView
+            android:layout_width="@dimen/tagCheckSize"
+               android:layout_height="@dimen/tagCheckSize"
+               android:src="@drawable/anc_ic_check_white_24dp"
+               android:layout_marginLeft="?listPreferredItemPaddingLeft"
+               android:layout_marginRight="?listPreferredItemPaddingRight"
+               android:visibility="invisible"/>
+
+</LinearLayout>

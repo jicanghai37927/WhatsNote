@@ -1,0 +1,133 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "app.haiyunshan.whatsnote"
+        minSdkVersion 24
+        targetSdkVersion 28
+        versionCode 3000
+        versionName '3.0.0'
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        externalNativeBuild {
+            cmake {
+                cppFlags ""
+            }
+        }
+
+        renderscriptTargetApi 28
+        renderscriptSupportModeEnabled false
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            ndk {
+                abiFilters "armeabi-v7a"
+                // 指定要ndk需要兼容的架构(这样其他依赖包里mips,x86,armeabi,arm-v8之类的so会被过滤掉)
+            }
+        }
+        debug {
+            debuggable true
+            jniDebuggable true
+            minifyEnabled false
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+    productFlavors {
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+
+    packagingOptions {
+
+        // for renderscript
+        exclude 'lib/armeabi-v7a/libRSSupport.so'
+        exclude 'lib/armeabi-v7a/librsjni_androidx.so'
+        exclude 'lib/armeabi-v7a/librsjni.so'
+
+        // for flexmark
+        exclude 'META-INF/LICENSE-LGPL-2.1.txt'
+        exclude 'META-INF/LICENSE-LGPL-3.txt'
+        exclude 'META-INF/LICENSE-W3C-TEST'
+        exclude 'META-INF/DEPENDENCIES'
+
+        // for apache
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+        exclude 'META-INF/rxjava.properties'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.palette:palette:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha2'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    implementation project(':andnext_base')
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation files('libs/joda-time-2.10.1.jar')
+    implementation files('libs/commonmark-0.12.1.jar')
+    implementation files('libs/markwon-core-release.aar')
+    implementation files('libs/jlatexmath-release.aar')
+    implementation project(':andnext_utils')
+    implementation project(':andnext_java')
+    implementation project(':andnext_recyclerview')
+    implementation project(':andnext_xsltml')
+    implementation 'jp.wasabeef:recyclerview-animators:3.0.0'
+    implementation project(':andnext_widget')
+    implementation project(':andnext_drawable')
+    implementation project(':andnext_theme')
+    implementation project(':andnext_helper')
+    implementation project(':andnext_download')
+    implementation project(':andnext_snapshot')
+    implementation project(':andnext_text')
+    implementation project(':andnext_ucrop')
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    implementation 'jp.wasabeef:glide-transformations:4.0.1'
+    implementation project(':andnext_dialog')
+    implementation project(':andnext_glide')
+    implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.10.0'
+    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.5'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:retrofit-converters:2.5.0'
+    implementation 'com.squareup.retrofit2:retrofit-adapters:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.5.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.5.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.14.0'
+    implementation 'com.romandanylyk:pageindicatorview:1.0.3'
+    implementation 'org.jsoup:jsoup:1.12.1'
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:background="@drawable/shape_picture_bg"
+        android:layout_marginLeft="?listPreferredItemPaddingRight"
+        android:layout_marginRight="?listPreferredItemPaddingRight"
+        android:layout_marginBottom="?listPreferredItemPaddingRight">
+
+    <club.andnext.widget.TargetSizeImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="?selectableItemBackground"/>
+
+</LinearLayout>

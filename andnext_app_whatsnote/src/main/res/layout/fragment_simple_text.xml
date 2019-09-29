@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".setting.SimpleTextFragment">
+
+    <app.haiyunshan.whatsnote.widget.SearchTitleBar
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            app:searchVisible="false"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_preference_top_bar_bg">
+
+    </app.haiyunshan.whatsnote.widget.SearchTitleBar>
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:overScrollMode="never">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                    android:id="@+id/tv_text"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp"
+                    android:textColorLink="?colorPrimary"
+                    android:textColorHighlight="@color/colorHighlightText"
+                    android:textIsSelectable="true"
+                    android:textSize="14sp"
+                    android:background="@color/colorWindowBackground"/>
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

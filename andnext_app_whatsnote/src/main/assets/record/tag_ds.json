@@ -1,0 +1,56 @@
+{
+  "list":
+  [
+    {
+      "id": "red",
+      "name": "红色",
+      "color": "red"
+    },
+    {
+      "id": "orange",
+      "name": "橙色",
+      "color": "orange"
+    },
+    {
+      "id": "yellow",
+      "name": "黄色",
+      "color": "yellow"
+    },
+    {
+      "id": "green",
+      "name": "绿色",
+      "color": "green"
+    },
+    {
+      "id": "blue",
+      "name": "蓝色",
+      "color": "blue"
+    },
+    {
+      "id": "purple",
+      "name": "紫色",
+      "color": "purple"
+    },
+    {
+      "id": "gray",
+      "name": "灰色",
+      "color": "gray"
+    },
+    {
+      "id": "work",
+      "name": "工作",
+      "color": "transparent"
+    },
+    {
+      "id": "family",
+      "name": "家庭",
+      "color": "transparent"
+    },
+    {
+      "id": "important",
+      "name": "重要",
+      "color": "transparent"
+    }
+
+  ]
+}

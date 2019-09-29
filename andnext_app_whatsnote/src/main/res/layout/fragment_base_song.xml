@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".song.BaseSongFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:overScrollMode="never"/>
+
+    <TextView
+            android:id="@+id/empty_view"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:textStyle="bold"
+            android:textColor="#7f7f7f"
+            android:text="无歌词文件"
+            android:layout_marginTop="64dp"
+            android:visibility="invisible"/>
+</FrameLayout>

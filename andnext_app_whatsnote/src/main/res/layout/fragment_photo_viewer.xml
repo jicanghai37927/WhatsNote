@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@drawable/transition_photo_gallery_bg"
+             tools:context=".general.PhotoViewerFragment">
+
+    <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <app.haiyunshan.whatsnote.widget.SearchTitleBar
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            app:searchVisible="false"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_top_bar_bg"
+            android:visibility="visible">
+
+    </app.haiyunshan.whatsnote.widget.SearchTitleBar>
+
+    <LinearLayout
+            android:id="@+id/bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:background="@drawable/shape_bottom_bar_bg">
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/bottom_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="app.haiyunshan.whatsandroid">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+            android:name=".WhatsApp"
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:largeHeap="true"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".TestWebsiteLayoutActivity">
+
+        </activity>
+        <activity
+                android:name=".TestUrlActivity"
+                android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TestMusicInfoActivity"></activity>
+        <activity android:name=".TestNeteaseLyricActivity"></activity>
+        <activity android:name=".TestGifActivity"></activity>
+        <activity android:name=".TestGojyuuonnActivity"></activity>
+        <activity android:name=".TestMusicActivity"></activity>
+        <activity android:name=".TestActionPickActivity"></activity>
+        <activity android:name=".TestCaptureVideoActivity"></activity>
+        <activity android:name=".TestSensorActivity"></activity>
+        <activity android:name=".TestSensorMovementActivity"></activity>
+        <activity android:name=".TestAudioHelperActivity"></activity>
+        <activity android:name=".TestRingViewActivity"></activity>
+        <activity
+                android:name=".TestPopupTapeActivity"
+                android:windowSoftInputMode="stateVisible|adjustResize"></activity>
+        <activity
+                android:name=".TestPopupWindowActivity"
+                android:windowSoftInputMode="stateVisible|adjustResize"></activity>
+        <activity android:name=".TestActionLayoutActivity"></activity>
+        <activity
+                android:name=".TestTouchDialogActivity"
+                android:windowSoftInputMode="stateVisible|adjustResize"></activity>
+        <activity android:name=".TestTapeActivity"></activity>
+        <activity android:name=".TestVolumeActivity"></activity>
+        <activity android:name=".TestRecordSoundActivity"></activity>
+        <activity android:name=".TestShortcutActivity"></activity>
+        <activity
+                android:name=".TestMML2LatexActivity"
+                android:windowSoftInputMode="stateVisible|adjustResize"></activity>
+        <activity android:name=".TestJLatexActivity"></activity>
+        <activity
+                android:name=".TestEditTextActivity"
+                android:windowSoftInputMode="adjustResize|stateVisible"></activity>
+        <activity android:name=".TestDownloadAgentActivity"></activity>
+        <activity android:name=".TestDownloadManagerActivity"></activity>
+        <activity android:name=".TestUCropActivity"></activity>
+        <activity android:name=".TestKeyEventActivity"></activity>
+        <activity android:name=".TestUndoActivity"></activity>
+        <activity android:name=".TestLayoutTransitionActivity"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name="com.example.android.apis.view.SystemUIModes"></activity>
+        <activity android:name="com.example.android.apis.view.SystemUIModesOverlay"></activity>
+        <activity android:name=".TestSystemUIActivity"></activity>
+        <activity
+                android:name="club.andnext.ucrop.UCropActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <meta-data
+                android:name="notch.config"
+                android:value="none" />
+
+        <provider
+                android:name="androidx.core.content.FileProvider"
+                android:authorities="app.haiyunshan.whatsandroid.fileprovider"
+                android:exported="false"
+                android:grantUriPermissions="true">
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

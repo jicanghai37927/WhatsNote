@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".record.TargetFolderFragment">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f8f9fa">
+
+        <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="?listPreferredItemPaddingLeft"
+                android:layout_marginLeft="?listPreferredItemPaddingLeft"
+                android:layout_marginRight="?listPreferredItemPaddingRight"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:singleLine="true"/>
+
+        <app.haiyunshan.whatsnote.widget.TitleBar
+                android:id="@+id/title_bar"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize">
+
+        </app.haiyunshan.whatsnote.widget.TitleBar>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="?listPreferredItemPaddingRight"
+                android:layout_marginLeft="?listPreferredItemPaddingLeft"
+                android:layout_marginRight="?listPreferredItemPaddingRight"
+                android:gravity="center">
+
+            <app.haiyunshan.whatsnote.widget.RecordIconView
+                    android:id="@+id/iv_icon"
+                    android:layout_width="@dimen/recordIconSize"
+                    android:layout_height="@dimen/recordIconSize"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="?listPreferredItemPaddingRight"/>
+
+            <TextView
+                    android:id="@+id/tv_name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

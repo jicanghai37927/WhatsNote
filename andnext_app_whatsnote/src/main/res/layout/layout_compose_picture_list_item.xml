@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="?listPreferredItemPaddingLeft"
+        android:layout_marginRight="?listPreferredItemPaddingRight"
+        android:layout_marginBottom="?listPreferredItemPaddingRight">
+
+    <FrameLayout
+            android:id="@+id/picture_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:background="@drawable/shape_picture_bg">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <club.andnext.widget.TargetSizeImageView
+                    android:id="@+id/iv_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minWidth="240dp"
+                    android:layout_gravity="center"
+                    android:minHeight="12dp"
+                    android:scaleType="fitCenter"/>
+
+            <club.andnext.widget.ParagraphEdit
+                    android:id="@+id/edit_text"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:allowUndo="false"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:hint="图片描述"
+                    android:textColor="@color/selector_picture_name"
+                    android:layout_marginTop="3dp"
+                    android:enabled="true"/>
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>
